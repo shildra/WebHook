@@ -54,13 +54,11 @@ while($row = mysqli_fetch_row($result)) {
     }
     $csv_row .= "\n";
 }
-
 /* Download as CSV File */
 header('Content-type: application/csv');
 header('Content-Disposition: attachment; filename=B2BStandard.csv');
 echo $csv_row;
 exit;
-
 ?>
 
 /*
