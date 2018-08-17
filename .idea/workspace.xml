@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5823730-0c86-4e4e-9597-3c4059edd5b8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/db_editor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/db_editor.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/export.php" beforeDir="false" afterPath="$PROJECT_DIR$/export.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +29,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="483">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="e#6#380#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -306,12 +305,12 @@
       <workItem from="1532946073579" duration="13333000" />
       <workItem from="1533049774608" duration="1507000" />
       <workItem from="1533090648402" duration="734000" />
-      <workItem from="1534531827982" duration="1138000" />
+      <workItem from="1534531827982" duration="3597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215379000" />
+    <option name="totallyTimeSpent" value="217838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -331,7 +330,7 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32995495" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32995495" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32995495" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24543501" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -702,8 +701,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="483">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#6#380#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
