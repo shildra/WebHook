@@ -20,7 +20,8 @@ function json_response($message = null, $code = 200)
     // return the encoded json
     return json_encode(array(
         'status' => $code < 300, // success or not?
-        'message' => "OK"
+        'message' => "OK",
+        'Params'=>$message
     ));
 }
 
@@ -41,6 +42,6 @@ function json_response($message = null, $code = 200)
         $success['purchase_map_flat']=$_POST['purchase_map_flat'];
         $success['fulfillment']=$_POST['fulfillment'];
 
-        return json_response($success);
+        echo json_response($success);
 
 ?>
