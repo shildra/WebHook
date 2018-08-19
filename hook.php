@@ -47,7 +47,7 @@ $my_file = 'file.txt';
 $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //implicitly creates file
 $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //open file for writing ('w','r','a')...
 
-fwrite($handle, $success['event']);
+fwrite($handle, "THIS IS THE FIRST TEST!!!");
 
 fclose($handle);
 
