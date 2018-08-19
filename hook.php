@@ -17,8 +17,5 @@
         $success['purchase_map_flat']=$_POST['purchase_map_flat'];
         $success['fulfillment']=$_POST['fulfillment'];
 
-        http_response_code(200);
-
-
-        return response()->json(['success'=>$success], 200);
+        return 200;
 ?>
