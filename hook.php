@@ -42,6 +42,21 @@ function json_response($message = null, $code = 200)
         $success['purchase_map_flat']=$_POST['purchase_map_flat'];
         $success['fulfillment']=$_POST['fulfillment'];
 
+
+$my_file = 'file.txt';
+$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //implicitly creates file
+$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //open file for writing ('w','r','a')...
+
+fwrite($handle, $success['event']);
+
+fclose($handle);
+
+header("Content-Disposition: attachment; filename=\"" . basename($my_file) . "\"");
+header("Content-Type: application/force-download");
+header("Content-Length: " . filesize($my_file));
+header("Connection: close");
+
         echo json_response($success);
+
 
 ?>
