@@ -27,35 +27,23 @@ function json_response($message = null, $code = 200)
 
 		$success = array();
 
-        $success['event']=$_POST['event'];
-        $success['thrivecart_account']=$_POST['thrivecart_account'];
-        $success['thrivecart_secret']=$_POST['thrivecart_secret'];
-        $success['base_product']=$_POST['base_product'];
-        $success['order_id']=$_POST['order_id'];
-        $success['currency']=$_POST['currency'];
-        $success['customer_id']=$_POST['customer_id'];
-        $success['customer_identifier']=$_POST['customer_identifier'];
-        $success['customer']=$_POST['customer'];
-        $success['order']=$_POST['order'];
-        $success['purchases']=$_POST['purchases'];
-        $success['purchase_map']=$_POST['purchase_map'];
-        $success['purchase_map_flat']=$_POST['purchase_map_flat'];
-        $success['fulfillment']=$_POST['fulfillment'];
+        $success['event']=$_POST['event'];                          $txt = "Event:=".$success['event'];
+        $success['thrivecart_account']=$_POST['thrivecart_account'];$txt = $txt." thrivecart_account:=".$success['thrivecart_account'];
+        $success['thrivecart_secret']=$_POST['thrivecart_secret'];  $txt = $txt." thrivecart_secret:=".$success['thrivecart_secret'];
+        $success['base_product']=$_POST['base_product'];            $txt = $txt." base_product:=".$success['base_product'];
+        $success['order_id']=$_POST['order_id'];                    $txt = $txt." order_id:=".$success['order_id'];
+        $success['currency']=$_POST['currency'];                    $txt = $txt." currency:=".$success['currency'];
+        $success['customer_id']=$_POST['customer_id'];              $txt = $txt." Event:=".$success['event'];
+        $success['customer_identifier']=$_POST['customer_identifier'];$txt = $txt." customer_id:=".$success['customer_id'];
+        $success['customer']=$_POST['customer'];                    $txt = $txt." customer:=".$success['customer'];
+        $success['order']=$_POST['order'];                          $txt = $txt." order:=".$success['order'];
+        $success['purchases']=$_POST['purchases'];                  $txt = $txt." purchases:=".$success['purchases'];
+        $success['purchase_map']=$_POST['purchase_map'];            $txt = $txt." purchase_map:=".$success['purchase_map'];
+        $success['purchase_map_flat']=$_POST['purchase_map_flat'];  $txt = $txt." purchase_map_flat:=".$success['purchase_map_flat'];
+        $success['fulfillment']=$_POST['fulfillment'];              $txt = $txt." fulfillment:=".$success['fulfillment'];
 
-
-$my_file = 'file.txt';
-$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //implicitly creates file
-$handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file); //open file for writing ('w','r','a')...
-
-fwrite($handle, "THIS IS THE FIRST TEST!!!");
-
-fclose($handle);
-
-header("Content-Disposition: attachment; filename=\"" . basename($my_file) . "\"");
-header("Content-Type: application/force-download");
-header("Content-Length: " . filesize($my_file));
-header("Connection: close");
-
+        $myfile = file_put_contents('file.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
+  
         echo json_response($success);
 
 
